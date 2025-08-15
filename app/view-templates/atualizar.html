@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Atualizar Funcionário</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Atualizar Funcionário</h1>
+        <form method="post">
+            <label for="cargo">Cargo:</label>
+            <input type="text" name="cargo" value="{{ funcionario[2] }}" required>
+            <label for="salario">Salário:</label>
+            <input type="number" name="salario" value="{{ funcionario[3] }}" required>
+            <button type="submit">Salvar</button>
+        </form>
+    </div>
+</body>
+</html>

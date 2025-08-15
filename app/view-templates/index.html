@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>CRUD de Funcionários</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Bem-vindo ao Sistema de Funcionários</h1>
+        <h3>Gerencie os dados dos funcionários de forma simples e eficiente.</h3>
+        <a href="{{ url_for('funcionario.listar') }}" class="btn">Ver lista de funcionários</a>
+    </div>
+</body>
+</html>

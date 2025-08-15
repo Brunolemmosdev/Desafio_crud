@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Inserir Funcionário</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Inserir Funcionário</h1>
+        <form method="post">
+            <label for="nome">Nome:</label>
+            <input type="text" name="nome" required>
+            <label for="cargo">Cargo:</label>
+            <input type="text" name="cargo" required>
+            <label for="salario">Salário:</label>
+            <input type="number" name="salario" required>
+            <button type="submit">Salvar</button>
+        </form>
+    </div>
+</body>
+</html>
