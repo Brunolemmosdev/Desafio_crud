@@ -5,7 +5,7 @@ def conectar():
         host="localhost",
         user="root",
         password="Blf072712@",
-        database="funcionarios",
+        database="funcionarios"
     )
 
 def listar_funcionarios():

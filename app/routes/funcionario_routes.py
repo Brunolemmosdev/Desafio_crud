@@ -42,3 +42,17 @@ def atualizar(id):
 def deletar(id):
     deletar_funcionario(id)
     return redirect(url_for('funcionario.listar'))
+
+# Código SQL para criação do banco de dados e tabela
+"""
+CREATE DATABASE funcionarios;
+
+USE funcionarios;
+
+CREATE TABLE funcionarios (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    nome VARCHAR(100) NOT NULL,
+    cargo VARCHAR(100) NOT NULL,
+    salario DECIMAL(10,2) NOT NULL
+);
+"""
